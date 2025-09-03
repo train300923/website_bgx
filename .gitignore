@@ -1,0 +1,41 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Fichiers média et uploads
+media/
+cvs/
+uploads/
+
+# Environnement virtuel
+venv/
+env/
+ENV/
+website_bgx-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers sensibles
+.env
+.env.local
+.env.production
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers statiques collectés
+django_website_bgx/staticfiles/
