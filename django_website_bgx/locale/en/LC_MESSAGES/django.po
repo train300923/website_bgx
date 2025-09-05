@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-05 18:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: main/models.py:14
+msgid "Slug"
+msgstr ""
+
+#: main/models.py:17
+msgid "URL de la page (ex: accueil, a-propos)"
+msgstr ""
+
+#: main/models.py:21 main/models.py:145
+msgid "Titre (Français)"
+msgstr ""
+
+#: main/models.py:22 main/models.py:146
+msgid "Titre (Anglais)"
+msgstr ""
+
+#: main/models.py:25
+msgid "Contenu (Français)"
+msgstr ""
+
+#: main/models.py:26
+msgid "Contenu (Anglais)"
+msgstr ""
+
+#: main/models.py:30
+msgid "Meta Description (Français)"
+msgstr ""
+
+#: main/models.py:35
+msgid "Meta Description (Anglais)"
+msgstr ""
+
+#: main/models.py:42
+msgid "Image principale"
+msgstr ""
+
+#: main/models.py:45
+msgid "Image principale de la page"
+msgstr ""
+
+#: main/models.py:50
+msgid "Ordre dans le menu"
+msgstr ""
+
+#: main/models.py:52
+msgid "Ordre d'affichage dans le menu principal"
+msgstr ""
+
+#: main/models.py:56 main/models.py:170
+msgid "Publiée"
+msgstr ""
+
+#: main/models.py:59 main/models.py:174
+msgid "Créé le"
+msgstr ""
+
+#: main/models.py:60 main/models.py:175
+msgid "Modifié le"
+msgstr ""
+
+#: main/models.py:63
+msgid "Page"
+msgstr ""
+
+#: main/models.py:64
+msgid "Pages"
+msgstr ""
+
+#: main/models.py:75
+msgid "Nom"
+msgstr ""
+
+#: main/models.py:76
+msgid "Email"
+msgstr ""
+
+#: main/models.py:77 main/models.py:194
+msgid "Téléphone"
+msgstr ""
+
+#: main/models.py:78
+msgid "Entreprise"
+msgstr ""
+
+#: main/models.py:81
+msgid "Sujet"
+msgstr ""
+
+#: main/models.py:82
+msgid "Message"
+msgstr ""
+
+#: main/models.py:86
+msgid "CV"
+msgstr ""
+
+#: main/models.py:90
+msgid "Formats acceptés: PDF, DOC, DOCX (max 5MB)"
+msgstr ""
+
+#: main/models.py:95
+msgid "Demande commerciale"
+msgstr ""
+
+#: main/models.py:96
+msgid "Candidature"
+msgstr ""
+
+#: main/models.py:97
+msgid "Demande d'information"
+msgstr ""
+
+#: main/models.py:98
+msgid "Autre"
+msgstr ""
+
+#: main/models.py:101
+msgid "Type de contact"
+msgstr ""
+
+#: main/models.py:109
+msgid "Nouveau"
+msgstr ""
+
+#: main/models.py:110
+msgid "Lu"
+msgstr ""
+
+#: main/models.py:111
+msgid "Répondu"
+msgstr ""
+
+#: main/models.py:112
+msgid "Archivé"
+msgstr ""
+
+#: main/models.py:115
+msgid "Statut"
+msgstr ""
+
+#: main/models.py:122
+msgid "Reçu le"
+msgstr ""
+
+#: main/models.py:125
+msgid "Message de contact"
+msgstr ""
+
+#: main/models.py:126
+msgid "Messages de contact"
+msgstr ""
+
+#: main/models.py:137
+msgid "Le fichier CV ne doit pas dépasser 5MB."
+msgstr ""
+
+#: main/models.py:149
+msgid "Description (Français)"
+msgstr ""
+
+#: main/models.py:150
+msgid "Description (Anglais)"
+msgstr ""
+
+#: main/models.py:153
+msgid "Lieu"
+msgstr ""
+
+#: main/models.py:155
+msgid "Type de contrat"
+msgstr ""
+
+#: main/models.py:158
+msgid "CDI"
+msgstr ""
+
+#: main/models.py:159
+msgid "CDD"
+msgstr ""
+
+#: main/models.py:160
+msgid "Stage"
+msgstr ""
+
+#: main/models.py:161
+msgid "Freelance"
+msgstr ""
+
+#: main/models.py:166
+msgid "Salaire minimum"
+msgstr ""
+
+#: main/models.py:167
+msgid "Salaire maximum"
+msgstr ""
+
+#: main/models.py:171
+msgid "Mise en avant"
+msgstr ""
+
+#: main/models.py:176
+msgid "Date limite de candidature"
+msgstr ""
+
+#: main/models.py:179
+msgid "Offre d'emploi"
+msgstr ""
+
+#: main/models.py:180
+msgid "Offres d'emploi"
+msgstr ""
+
+#: main/models.py:192
+msgid "Nom de l'entreprise"
+msgstr ""
+
+#: main/models.py:193
+msgid "Email de contact"
+msgstr ""
+
+#: main/models.py:195
+msgid "Adresse"
+msgstr ""
+
+#: main/models.py:198
+msgid "LinkedIn"
+msgstr ""
+
+#: main/models.py:199
+msgid "Twitter"
+msgstr ""
+
+#: main/models.py:203
+msgid "Email pour les contacts"
+msgstr ""
+
+#: main/models.py:204
+msgid "Email qui recevra les messages du formulaire de contact"
+msgstr ""
+
+#: main/models.py:208
+msgid "Logo"
+msgstr ""
+
+#: main/models.py:211
+msgid "Configuration du site"
+msgstr ""
+
+#: main/models.py:212
+msgid "Configurations du site"
+msgstr ""
+
+#: main/models.py:220
+msgid "Une seule configuration est autorisée."
+msgstr ""

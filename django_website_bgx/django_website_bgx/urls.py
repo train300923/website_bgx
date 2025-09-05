@@ -16,8 +16,22 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
+from django.conf import settings
+from django.conf.urls.static import static
 
+# URLs qui ne nécessitent pas de traduction (admin, API, etc.)
 urlpatterns = [
     path("admin/", admin.site.urls),
 ]
+
+# URLs avec support multilingue
+urlpatterns += i18n_patterns(
+    path("", include("main.urls")),  # Nos URLs principales
+    prefix_default_language=False,  # Pas de préfixe pour le français (langue par défaut)
+)
+
+# Configuration pour les fichiers média en développement
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
