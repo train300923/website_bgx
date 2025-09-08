@@ -16,7 +16,7 @@ def home(request):
     # Configuration du site
     config = SiteConfiguration.objects.first()
     
-    return render(request, 'main/home.html', {
+    return render(request, 'main/page.html', {
         'page': home_page,
         'featured_jobs': featured_jobs,
         'config': config,
@@ -72,7 +72,7 @@ def contact(request):
     page = get_object_or_404(Page, slug='contact', is_published=True)
     config = SiteConfiguration.objects.first()
     
-    return render(request, 'main/contact.html', {
+    return render(request, 'main/page.html', {
         'page': page,
         'config': config,
     })
@@ -83,7 +83,7 @@ def recruitment(request):
     jobs = JobOffer.objects.filter(is_published=True).order_by('-is_featured', '-created_at')
     config = SiteConfiguration.objects.first()
     
-    return render(request, 'main/recruitment.html', {
+    return render(request, 'main/page.html', {
         'jobs': jobs,
         'config': config,
     })
@@ -96,7 +96,7 @@ def recruitment_job_name(request, job_name):
     job = get_object_or_404(JobOffer, title_fr__icontains=job_slug, is_published=True)
     config = SiteConfiguration.objects.first()
     
-    return render(request, 'main/recruitment_job.html', {
+    return render(request, 'main/page.html', {
         'job': job,
         'config': config,
     })

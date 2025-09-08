@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page.title_fr|default:'Page' }} - BGX{% endblock %}
+
+{% block content %}
+  <h1 class="mb-3">{{ page.title_fr }}</h1>
+  <div>{{ page.content_fr|safe }}</div>
+{% endblock %}
