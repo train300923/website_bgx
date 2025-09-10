@@ -1,0 +1,13 @@
+/* Brand background using your solid color image */
+.navbar,
+footer {
+  background-image: url('../img/couleur_unie.jpg') !important;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+/* Optional: adjust text color for contrast if needed */
+.navbar .nav-link, .navbar .navbar-brand { color: #000; }
+.navbar .nav-link:hover { color: #333; }
+footer { color: #000; }

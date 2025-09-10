@@ -1,7 +1,10 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container">
-      <a class="navbar-brand" href="/">BGX</a>
+      <a class="navbar-brand" href="/"><img src="{% static 'img/logo.jpg' %}" alt="Bourgeaux et fils" height="28"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,9 +17,18 @@
           <li class="nav-item"><a class="nav-link" href="{% url 'main:contact' %}">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'main:recruitment' %}">Recrutement</a></li>
         </ul>
-        <div class="d-flex gap-2">
-          <a class="btn btn-outline-secondary btn-sm" href="/">FR</a>
-          <a class="btn btn-outline-secondary btn-sm" href="/en/">EN</a>
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+            {% if LANGUAGE_CODE|slice:":2" == "en" %}
+              <img src="{% static 'img/en_flag_222x147.svg' %}" alt="EN" height="16"> EN
+            {% else %}
+              <img src="{% static 'img/fr_flag_222x147.svg' %}" alt="FR" height="16"> FR
+            {% endif %}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/"><img src="{% static 'img/fr_flag_222x147.svg' %}" height="16"> Français</a></li>
+            <li><a class="dropdown-item" href="/en/"><img src="{% static 'img/en_flag_222x147.svg' %}" height="16"> English</a></li>
+          </ul>
         </div>
       </div>
     </div>
