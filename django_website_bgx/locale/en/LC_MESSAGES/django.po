@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 18:14+0200\n"
+"POT-Creation-Date: 2025-09-19 17:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: main/models.py:14
 msgid "Slug"
 msgstr ""
@@ -272,3 +273,71 @@ msgstr ""
 #: main/models.py:220
 msgid "Une seule configuration est autorisée."
 msgstr ""
+
+# URL translations (must match django_website_bgx/main/urls.py)
+# Keep parameters exactly identical
+#: main/urls.py:13
+msgid "qui-sommes-nous/"
+msgstr "about-us/"
+
+#: main/urls.py:14
+msgid "nos-procedes/"
+msgstr "our-processes/"
+
+#: main/urls.py:15
+msgid "nos-produits/"
+msgstr "our-products/"
+
+#: main/urls.py:16
+msgid "qualite/"
+msgstr "quality/"
+
+#: main/urls.py:17
+msgid "contact/"
+msgstr "contact/"
+
+#: main/urls.py:20
+msgid "recrutement/"
+msgstr "recruitment/"
+
+#: main/urls.py:21
+msgid "recrutement/<str:job_name>/"
+msgstr "recruitment/<str:job_name>/"
+
+#: main/urls.py:24
+msgid "mentions-legales/"
+msgstr "legal-notice/"
+
+#: main/urls.py:25
+msgid "politique-de-protection-des-donnees/"
+msgstr "privacy-policy/"
+
+#: main/urls.py:26
+msgid "politique-des-cookies/"
+msgstr "cookie-policy/"
+
+# URL translations (must match django_website_bgx/main/urls.py)
+# Keep parameters exactly identical
+#: templates/includes/header.html:13
+msgid "Qui sommes-nous"
+msgstr "About us"
+
+#: templates/includes/header.html:14
+msgid "Nos procédés"
+msgstr "Our processes"
+
+#: templates/includes/header.html:15
+msgid "Nos produits"
+msgstr "Our products"
+
+#: templates/includes/header.html:16
+msgid "Qualité"
+msgstr "Quality"
+
+#: templates/includes/header.html:17
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/includes/header.html:18
+msgid "Recrutement"
+msgstr "Recruitment"

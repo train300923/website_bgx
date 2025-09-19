@@ -1,10 +1,14 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.utils.translation import get_language
 from .models import Page, JobOffer, SiteConfiguration
 
 
 def home(request):
     """Page d'accueil"""
+    # Redirection automatique vers /en/ pour les navigateurs anglais lors de la première visite
+    # Si l'URL n'a pas de préfixe de langue et que la langue active est "en"
+    if request.path == '/' and get_language() and get_language().startswith('en'):
+        return redirect('/en/')
     try:
         home_page = Page.objects.get(slug='accueil')
     except Page.DoesNotExist:

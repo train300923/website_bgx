@@ -1,8 +1,21 @@
 {% extends 'base.html' %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 
-{% block title %}{{ page.title_fr|default:'Page' }} - BGX{% endblock %}
+{% block title %}
+  {% if LANGUAGE_CODE|slice:":2" == "en" %}
+    {{ page.title_en|default:'Page' }} - BGX
+  {% else %}
+    {{ page.title_fr|default:'Page' }} - BGX
+  {% endif %}
+{% endblock %}
 
 {% block content %}
-  <h1 class="mb-3">{{ page.title_fr }}</h1>
-  <div>{{ page.content_fr|safe }}</div>
+  {% if LANGUAGE_CODE|slice:":2" == "en" %}
+    <h1 class="mb-3">{{ page.title_en }}</h1>
+    <div>{{ page.content_en|safe }}</div>
+  {% else %}
+    <h1 class="mb-3">{{ page.title_fr }}</h1>
+    <div>{{ page.content_fr|safe }}</div>
+  {% endif %}
 {% endblock %}

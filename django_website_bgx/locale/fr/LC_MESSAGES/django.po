@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-05 18:14+0200\n"
+"POT-Creation-Date: 2025-09-19 16:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: main/models.py:14
 msgid "Slug"
 msgstr ""
@@ -272,3 +273,79 @@ msgstr ""
 #: main/models.py:220
 msgid "Une seule configuration est autorisée."
 msgstr ""
+
+# Traductions des segments d'URL (identiques en FR)
+#: main/urls.py:13
+msgid "qui-sommes-nous/"
+msgstr "qui-sommes-nous/"
+
+#: main/urls.py:14
+msgid "nos-procedes/"
+msgstr "nos-procedes/"
+
+#: main/urls.py:15
+msgid "nos-produits/"
+msgstr "nos-produits/"
+
+#: main/urls.py:16
+msgid "qualite/"
+msgstr "qualite/"
+
+#: main/urls.py:17
+msgid "contact/"
+msgstr "contact/"
+
+#: main/urls.py:20
+msgid "recrutement/"
+msgstr "recrutement/"
+
+#: main/urls.py:21
+msgid "recrutement/<str:job_name>/"
+msgstr "recrutement/<str:job_name>/"
+
+#: main/urls.py:24
+msgid "mentions-legales/"
+msgstr "mentions-legales/"
+
+#: main/urls.py:25
+msgid "politique-de-protection-des-donnees/"
+msgstr "politique-de-protection-des-donnees/"
+
+#: main/urls.py:26
+msgid "politique-des-cookies/"
+msgstr "politique-des-cookies/"
+
+# Traductions des segments d'URL (identiques en FR)
+#: templates/includes/header.html:13
+#, fuzzy
+#| msgid "qui-sommes-nous/"
+msgid "Qui sommes-nous"
+msgstr "qui-sommes-nous/"
+
+#: templates/includes/header.html:14
+msgid "Nos procédés"
+msgstr ""
+
+#: templates/includes/header.html:15
+#, fuzzy
+#| msgid "nos-produits/"
+msgid "Nos produits"
+msgstr "nos-produits/"
+
+#: templates/includes/header.html:16
+#, fuzzy
+#| msgid "qualite/"
+msgid "Qualité"
+msgstr "qualite/"
+
+#: templates/includes/header.html:17
+#, fuzzy
+#| msgid "contact/"
+msgid "Contact"
+msgstr "contact/"
+
+#: templates/includes/header.html:18
+#, fuzzy
+#| msgid "recrutement/"
+msgid "Recrutement"
+msgstr "recrutement/"
