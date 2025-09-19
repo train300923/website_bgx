@@ -1,14 +1,21 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils.translation import get_language
+from django.conf import settings
 from .models import Page, JobOffer, SiteConfiguration
 
 
 def home(request):
     """Page d'accueil"""
-    # Redirection automatique vers /en/ pour les navigateurs anglais lors de la première visite
-    # Si l'URL n'a pas de préfixe de langue et que la langue active est "en"
-    if request.path == '/' and get_language() and get_language().startswith('en'):
-        return redirect('/en/')
+    # Redirection auto vers /en/ pour tout navigateur NON français lors de la première visite
+    # Conditions: on est sur la racine "/", la langue active ne commence pas par "fr",
+    # et aucun cookie de langue n'est encore présent (première visite côté langue)
+    active_lang = get_language() or ''
+    has_lang_cookie = settings.LANGUAGE_COOKIE_NAME in request.COOKIES
+    if request.path == '/' and not active_lang.startswith('fr') and not has_lang_cookie:
+        response = redirect('/en/')
+        # Sauvegarder le choix pour les visites suivantes (1 an)
+        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, 'en', max_age=60*60*24*365)
+        return response
     try:
         home_page = Page.objects.get(slug='accueil')
     except Page.DoesNotExist:
