@@ -16,22 +16,7 @@ def home(request):
         # Sauvegarder le choix pour les visites suivantes (1 an)
         response.set_cookie(settings.LANGUAGE_COOKIE_NAME, 'en', max_age=60*60*24*365)
         return response
-    try:
-        home_page = Page.objects.get(slug='accueil')
-    except Page.DoesNotExist:
-        home_page = None
-    
-    # Récupérer les offres d'emploi mises en avant
-    featured_jobs = JobOffer.objects.filter(is_featured=True, is_published=True)[:3]
-    
-    # Configuration du site
-    config = SiteConfiguration.objects.first()
-    
-    return render(request, 'main/page.html', {
-        'page': home_page,
-        'featured_jobs': featured_jobs,
-        'config': config,
-    })
+    return render(request, 'main/home.html')
 
 
 def about(request):
