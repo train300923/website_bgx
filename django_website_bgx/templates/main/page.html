@@ -11,6 +11,12 @@
 {% endblock %}
 
 {% block content %}
+  {% load static %}
+  {% if show_home_hero %}
+    <div class="mb-4">
+      <img src="{% static 'img/photo_cad_usine2.png' %}" alt="Usine" class="img-fluid w-100" />
+    </div>
+  {% endif %}
   {% if LANGUAGE_CODE|slice:":2" == "en" %}
     <h1 class="mb-3">{{ page.title_en }}</h1>
     <div>{{ page.content_en|safe }}</div>

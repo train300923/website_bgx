@@ -9,7 +9,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="{% url 'main:about' %}">{% trans "Qui sommes-nous" %}</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'main:processes' %}">{% trans "Nos procédés" %}</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'main:products' %}">{% trans "Nos produits" %}</a></li>
@@ -17,12 +17,12 @@
           <li class="nav-item"><a class="nav-link" href="{% url 'main:contact' %}">{% trans "Contact" %}</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'main:recruitment' %}">{% trans "Recrutement" %}</a></li>
         </ul>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+        <div class="dropdown ms-2">
+          <button class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown">
             {% if LANGUAGE_CODE|slice:":2" == "en" %}
-              <img src="{% static 'img/en_flag_222x147.svg' %}" alt="EN" height="16"> EN
+              <img src="{% static 'img/en_flag_222x147.svg' %}" alt="EN" height="12"> EN
             {% else %}
-              <img src="{% static 'img/fr_flag_222x147.svg' %}" alt="FR" height="16"> FR
+              <img src="{% static 'img/fr_flag_222x147.svg' %}" alt="FR" height="12"> FR
             {% endif %}
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
