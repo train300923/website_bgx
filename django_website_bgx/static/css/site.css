@@ -12,20 +12,20 @@ footer {
 .navbar .nav-link:hover { color: #333; }
 footer { color: #000; }
 
-/* Home page hero */
-.home-hero {
+/* Home page main background (renamed from home-hero) */
+.main-photo-background {
   position: relative;
   width: 100vw;
   min-height: 50vh;
 }
-.home-hero__bg {
+.main-photo-background__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.home-hero__overlay {
+.main-photo-background__overlay {
   position: absolute;
   inset: 0;
   background-image: url('../img/couleur_unie.jpg');
@@ -34,9 +34,44 @@ footer { color: #000; }
   opacity: 0.6;
   pointer-events: none;
 }
-.home-hero__content {
+.main-photo-background__content {
   position: relative;
   z-index: 1;
 }
 .home-navbar .nav-link, .home-navbar .navbar-brand { color: #000; }
 .home-navbar .nav-link:hover { color: #ed0e0e; }
+/* Make only the home navbar transparent (keep default grey for others) */
+.home-navbar {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* Ensure the included header inside the home hero is transparent */
+.home-navbar-wrapper .navbar {
+  background-image: none !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* Full-bleed banner section below split */
+.chiffres_cles_home_banner {
+  position: relative;
+  width: 100vw;
+  min-height: 320px; /* match approximate height of split section image */
+}
+.chiffres_cles_home_banner__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chiffres_cles_home_banner__overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/couleur_unie.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.6;
+  pointer-events: none;
+}
