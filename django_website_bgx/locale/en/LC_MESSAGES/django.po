@@ -319,14 +319,14 @@ msgstr "cookie-policy/"
 # URL translations (must match django_website_bgx/main/urls.py)
 # Keep parameters exactly identical
 #: templates/includes/header.html:13
-msgid "Qui sommes-nous"
+msgid "La société"
 msgstr "About us"
 
-#: templates/includes/header.html:14
+#: templates/includes/header.html:15
 msgid "Nos procédés"
 msgstr "Our processes"
 
-#: templates/includes/header.html:15
+#: templates/includes/header.html:14
 msgid "Nos produits"
 msgstr "Our products"
 
@@ -334,10 +334,10 @@ msgstr "Our products"
 msgid "Qualité"
 msgstr "Quality"
 
-#: templates/includes/header.html:17
+#: templates/includes/header.html:18
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/includes/header.html:18
+#: templates/includes/header.html:17
 msgid "Recrutement"
 msgstr "Recruitment"
