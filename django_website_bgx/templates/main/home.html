@@ -21,9 +21,14 @@
         {% include 'includes/header.html' %}
       </div>
       <div class="container py-2">
-        <div class="d-flex justify-content-end small">
-          <div class="me-3 text-dark">+33 (0)4 50 97 21 87</div>
-          <div><a class="text-dark text-decoration-none" href="mailto:info@bourgeaux-fils.com">info@bourgeaux-fils.com</a></div>
+        <div class="d-flex justify-content-end small align-items-center">
+          <div class="me-4 d-flex align-items-center text-dark">
+            <img src="{% static 'img/call.png' %}" alt="Phone" height="16" class="me-2"> +33 (0)4 50 97 21 87
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/email.png' %}" alt="Email" height="16" class="me-2">
+            <a class="text-dark text-decoration-none" href="mailto:info@bourgeaux-fils.com">info@bourgeaux-fils.com</a>
+          </div>
         </div>
       </div>
     </div>
@@ -52,6 +57,26 @@
     <div class="chiffres_cles_home_banner__overlay"></div>
   </section>
 
+  <!-- White stats section with two images and labels -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-6 text-center">
+          <img src="{% static 'img/people_2.png' %}" alt="Employees" class="img-fluid mb-2" style="max-height: 140px;">
+          <div class="fw-bold red-accent" style="font-size: 3rem;">22</div>
+          <div class="text-muted" style="font-size: 1.15rem;">employés</div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="{% static 'img/lathe.png' %}" alt="Lathe" class="img-fluid mb-2" style="max-height: 140px;">
+          <div class="fw-bold red-accent" style="font-size: 3rem;">1943</div>
+          <div class="text-muted" style="font-size: 1.15rem;">entreprise familiale depuis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'includes/footer.html' %}
+  
   <!-- Optional: main content below hero can go here if needed -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
