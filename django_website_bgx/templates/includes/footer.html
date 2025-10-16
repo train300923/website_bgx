@@ -1,5 +1,24 @@
-<footer class="border-top mt-4 py-4 bg-light">
-  <div class="container text-center text-muted">
-    <small>&copy; {{ now|date:'Y' }} BGX. Tous droits réservés.</small>
+{% load static %}
+
+<footer class="border-top mt-4 py-4 bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="{% static 'img/logo.jpg' %}" alt="BGX" style="max-height: 40px;" class="mb-2">
+        <div class="small">
+          <div>126 Avenue du Mole</div>
+          <div>74130 Ayse</div>
+          <div class="mt-2">+33 (0)4 50 97 21 87</div>
+          <div class="mt-2"><a href="mailto:info@bourgeaux-fils.com" class="text-decoration-none">info@bourgeaux-fils.com</a></div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="fw-bold mb-2" style="font-size: 1.25rem;">Certifications</div>
+        <img src="{% static 'img/EN_9100_2018.jpg' %}" alt="EN 9100:2018" class="img-fluid" style="max-height: 100px;">
+      </div>
+      <div class="col-md-4 text-md-end">
+        <img src="{% static 'img/logo_region.webp' %}" alt="Région" class="img-fluid" style="max-height: 80px;">
+      </div>
+    </div>
   </div>
 </footer>

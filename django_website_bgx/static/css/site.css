@@ -59,6 +59,10 @@ footer { color: #000; }
   width: 100vw;
   min-height: 320px; /* match approximate height of split section image */
 }
+
+/* Simple red accent helpers */
+.red-accent { color: #ed0e0e; }
+/* removed img-red filter per request */
 .chiffres_cles_home_banner__bg {
   position: absolute;
   inset: 0;
