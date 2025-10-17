@@ -54,7 +54,7 @@ footer { color: #000; }
 }
 
 /* Full-bleed banner section below split */
-.chiffres_cles_home_banner {
+.expertise_home_banner {
   position: relative;
   width: 100vw;
   min-height: 320px; /* match approximate height of split section image */
@@ -63,14 +63,14 @@ footer { color: #000; }
 /* Simple red accent helpers */
 .red-accent { color: #ed0e0e; }
 /* removed img-red filter per request */
-.chiffres_cles_home_banner__bg {
+.expertise_home_banner__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.chiffres_cles_home_banner__overlay {
+.expertise_home_banner__overlay {
   position: absolute;
   inset: 0;
   background-image: url('../img/couleur_unie.jpg');
@@ -78,4 +78,10 @@ footer { color: #000; }
   background-size: auto;
   opacity: 0.6;
   pointer-events: none;
+}
+/* Center banner text vertically */
+.expertise_home_banner .container {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
 }
